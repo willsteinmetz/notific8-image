@@ -1,0 +1,27 @@
+{
+  "name": "notific8-image",
+  "version": "1.0.0",
+  "homepage": "https://github.com/willsteinmetz/notific8-image",
+  "authors": [
+    "Will Steinmetz <willsteinmetz@users.noreply.github.com>"
+  ],
+  "description": "Close all module for notific8",
+  "main": "dist/notific8-image.js",
+  "keywords": [
+    "javascript",
+    "notific8",
+    "sass",
+    "css"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "notific8": "^3.6.0"
+  }
+}
