@@ -4,7 +4,8 @@
   "description": "Image module for notific8",
   "main": "dist/notific8-image.js",
   "scripts": {
-    "test": "karma start --single-run"
+    "test": "karma start --single-run",
+    "demo": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1",
     "load-grunt-config": "^0.19.2",
+    "node-static": "^0.7.8",
     "phantomjs-prebuilt": "^2.1.7",
     "time-grunt": "^1.4.0"
   }

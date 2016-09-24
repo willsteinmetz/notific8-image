@@ -1,0 +1,24 @@
+extends ../../bower_components/notific8/src/pug/demo-js.pug
+
+block moduleJs
+  script(type='text/javascript').
+    $(function() {
+      window.notific8ModuleOptions = {};
+      $('input[name="notific8Image"]').on('click', function(event) {
+        var $target = $(event.target),
+          $container = $target.closest('.notific8-image-options'),
+          $option = $target.closest('.notific8-image-option');
+
+        // handle the selected notification
+        $container.find('.notific8-image-option.selected').removeClass('selected');
+        if ($option.size()) {
+          $option.addClass('selected');
+        }
+
+        if ($target.val()) {
+          window.notific8ModuleOptions.image = $target.val();
+        } else {
+          delete window.notific8ModuleOptions.image;
+        }
+      })
+    });
