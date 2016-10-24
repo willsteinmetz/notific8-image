@@ -11,27 +11,45 @@
   align-items: center;
   display: flex; }
 
-.notific8-notification.family-legacy.has-image {
+.notific8-notification.family-legacy.has-image,
+.notific8-notification.legacy.has-image,
+.notific8-notification.ocho.has-image {
   width: 27.1875em; }
-  .notific8-notification.family-legacy.has-image .notific8-message-content {
+  .notific8-notification.family-legacy.has-image .notific8-message-content,
+  .notific8-notification.legacy.has-image .notific8-message-content,
+  .notific8-notification.ocho.has-image .notific8-message-content {
     padding-left: 0.625em; }
   .notific8-notification.family-legacy.has-image .notific8-image,
-  .notific8-notification.family-legacy.has-image .notific8-image img {
+  .notific8-notification.family-legacy.has-image .notific8-image img,
+  .notific8-notification.legacy.has-image .notific8-image,
+  .notific8-notification.legacy.has-image .notific8-image img,
+  .notific8-notification.ocho.has-image .notific8-image,
+  .notific8-notification.ocho.has-image .notific8-image img {
     max-height: 4.375em;
     max-width: 4.375em; }
 
-.left .notific8-notification.family-legacy.has-image {
+.left .notific8-notification.family-legacy.has-image,
+.left .notific8-notification.legacy.has-image,
+.left .notific8-notification.ocho.has-image {
   flex-direction: row-reverse;
   padding-right: 90px; }
-  .left .notific8-notification.family-legacy.has-image .notific8-image {
+  .left .notific8-notification.family-legacy.has-image .notific8-image,
+  .left .notific8-notification.legacy.has-image .notific8-image,
+  .left .notific8-notification.ocho.has-image .notific8-image {
     float: right;
     margin-right: -5.0625em; }
-  .left .notific8-notification.family-legacy.has-image .notific8-message-content {
+  .left .notific8-notification.family-legacy.has-image .notific8-message-content,
+  .left .notific8-notification.legacy.has-image .notific8-message-content,
+  .left .notific8-notification.ocho.has-image .notific8-message-content {
     width: 100%; }
 
-.right .notific8-notification.family-legacy.has-image {
+.right .notific8-notification.family-legacy.has-image,
+.right .notific8-notification.legacy.has-image,
+.right .notific8-notification.ocho.has-image {
   padding-left: 90px; }
-  .right .notific8-notification.family-legacy.has-image .notific8-image {
+  .right .notific8-notification.family-legacy.has-image .notific8-image,
+  .right .notific8-notification.legacy.has-image .notific8-image,
+  .right .notific8-notification.ocho.has-image .notific8-image {
     float: left;
     margin-left: -5.0625em; }
 
