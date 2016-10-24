@@ -7,32 +7,31 @@
 // http://opensource.org/licenses/BSD-3-Clause
 
 @mixin notific8_atomic_theme_image($name, $color) {
-  .#{$notific8-ns}-notification.family-atomic.#{$name} {
-    .#{$notific8-ns}-image {
-      background-color: $color;
-    }
+  .#{$notific8-ns}-notification.family-atomic.#{$name} .#{$notific8-ns}-image,
+  .#{$notific8-ns}-notification.atomic.#{$name} .#{$notific8-ns}-image {
+    background-color: $color;
   }
 }
 
-.#{$notific8-ns}-notification.family-atomic {
-  .#{$notific8-ns}-image {
-    box-sizing: border-box;
-    height: em(79px, 14px);
-    padding-top: .375em;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: em(30px, 14px);
+.#{$notific8-ns}-notification.family-atomic .#{$notific8-ns}-image,
+.#{$notific8-ns}-notification.atomic .#{$notific8-ns}-image {
+  box-sizing: border-box;
+  height: em(79px, 14px);
+  padding-top: .375em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: em(30px, 14px);
 
-    img {
-      max-height: em(18px, 14px);
-      max-width: em(18px, 14px);
-    }
+  img {
+    max-height: em(18px, 14px);
+    max-width: em(18px, 14px);
   }
 }
 
 .right {
-  .#{$notific8-ns}-notification.family-atomic.has-image {
+  .#{$notific8-ns}-notification.family-atomic.has-image,
+  .#{$notific8-ns}-notification.atomic.has-image {
     border-left-width: 1px;
     padding-left: 2.125em;
   }
@@ -43,7 +42,8 @@
 }
 
 .left {
-  .#{$notific8-ns}-notification.family-atomic.has-image {
+  .#{$notific8-ns}-notification.family-atomic.has-image,
+  .#{$notific8-ns}-notification.atomic.has-image {
     border-right-width: 1px;
     padding-right: 2.125em;
   }

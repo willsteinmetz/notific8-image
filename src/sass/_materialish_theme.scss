@@ -8,14 +8,13 @@
 // http://opensource.org/licenses/BSD-3-Clause
 //
 
-.#{$notific8-ns}-notification.family-materialish.has-image {
-  .notific8-image {
-    margin-left: em(24px, 14px);
-    margin-top: em(4px, 14px);
+.#{$notific8-ns}-notification.family-materialish.has-image .#{$notific8-ns}-image,
+.#{$notific8-ns}-notification.materialish.has-image .#{$notific8-ns}-image {
+  margin-left: em(24px, 14px);
+  margin-top: em(4px, 14px);
 
-    img {
-      max-height: 1em;
-      max-width: 1em;
-    }
+  img {
+    max-height: 1em;
+    max-width: 1em;
   }
 }

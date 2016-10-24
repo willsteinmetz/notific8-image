@@ -7,34 +7,33 @@
 // http://opensource.org/licenses/BSD-3-Clause
 
 @mixin notific8_chicchat_theme_image($name, $color) {
-  .#{$notific8-ns}-notification.family-chicchat.#{$name} {
-    .#{$notific8-ns}-image {
-      background-color: $color;
-    }
+  .#{$notific8-ns}-notification.family-chicchat.#{$name} .#{$notific8-ns}-image,
+  .#{$notific8-ns}-notification.chicchat.#{$name} .#{$notific8-ns}-image {
+    background-color: $color;
   }
 }
 
-.#{$notific8-ns}-notification.family-chicchat.has-image {
-  .#{$notific8-ns}-image {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: em(45px, 14px);
+.#{$notific8-ns}-notification.family-chicchat.has-image .#{$notific8-ns}-image,
+.#{$notific8-ns}-notification.chicchat.has-image .#{$notific8-ns}-image {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: em(45px, 14px);
 
-    img {
-      max-height: em(28px, 14px);
-      max-width: em(28px, 14px);
-    }
+  img {
+    max-height: em(28px, 14px);
+    max-width: em(28px, 14px);
   }
 }
 
 .right {
-  .#{$notific8-ns}-notification.family-chicchat.has-image {
+  .#{$notific8-ns}-notification.family-chicchat.has-image,
+  .#{$notific8-ns}-notification.chicchat.has-image {
     border-left-width: 1px;
     padding-left: em(62px, 14px);
 
@@ -45,7 +44,8 @@
 }
 
 .left {
-  .#{$notific8-ns}-notification.family-chicchat.has-image {
+  .#{$notific8-ns}-notification.family-chicchat.has-image,
+  .#{$notific8-ns}-notification.chicchat.has-image {
     border-right-width: 1px;
     padding-right: em(62px, 14px);
 
